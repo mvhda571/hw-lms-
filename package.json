@@ -1,0 +1,10 @@
+{
+  "name": "car-catalog-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Car catalog manager with a persistent JSON API",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

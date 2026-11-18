@@ -1,0 +1,68 @@
+[
+  {
+    "id": "toyota-camry-2022",
+    "name": "Toyota Camry",
+    "year": 2022,
+    "category": "Sedan",
+    "engine": "2.5L · 203 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Oq",
+    "price": 385000000,
+    "image": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "chevrolet-malibu-2023",
+    "name": "Chevrolet Malibu",
+    "year": 2023,
+    "category": "Sedan",
+    "engine": "2.0L Turbo · 253 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Qora",
+    "price": 410000000,
+    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "hyundai-tucson-2023",
+    "name": "Hyundai Tucson",
+    "year": 2023,
+    "category": "Krossover",
+    "engine": "2.0L · 156 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Kulrang",
+    "price": 445000000,
+    "image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "kia-k5-2022",
+    "name": "Kia K5",
+    "year": 2022,
+    "category": "Sedan",
+    "engine": "2.0L · 150 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Ko‘k",
+    "price": 365000000,
+    "image": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "bmw-5-series-2021",
+    "name": "BMW 5 Series",
+    "year": 2021,
+    "category": "Premium",
+    "engine": "2.0L Turbo · 184 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Qora",
+    "price": 620000000,
+    "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "mercedes-c-class-2022",
+    "name": "Mercedes-Benz C-Class",
+    "year": 2022,
+    "category": "Premium",
+    "engine": "2.0L Turbo · 204 ot kuchi",
+    "transmission": "Avtomat",
+    "color": "Kumush",
+    "price": 685000000,
+    "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85"
+  }
+]

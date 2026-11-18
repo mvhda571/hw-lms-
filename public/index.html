@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f8">
+    <title>AvtoKatalog — avtomobillar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/" aria-label="AvtoKatalog bosh sahifasi">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M5 19.5 7.6 12a3 3 0 0 1 2.8-2h11.2a3 3 0 0 1 2.8 2l2.6 7.5v5a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1H9v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 5 24.5v-5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 19h20M10 22h.01M22 22h.01M9 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <span>avto<span class="brand-light">katalog</span></span>
+        </a>
+
+        <div class="workspace-label">ISHCHI MAYDON</div>
+        <nav class="navigation" aria-label="Asosiy menyu">
+          <a class="nav-item active" href="#catalog">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+            Avtomobillar
+            <span class="nav-count" id="nav-count">—</span>
+          </a>
+          <a class="nav-item muted" href="#catalog">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Tahlil
+            <span class="soon-label">TEZ KUNDA</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <div class="help-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M9.6 9a2.5 2.5 0 1 1 4.2 1.8c-1 .9-1.8 1.2-1.8 2.7M12 17.2h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <strong>Yordam kerakmi?</strong>
+            <p>Katalogni boshqarish bo‘yicha savollaringiz bormi?</p>
+            <a href="mailto:yordam@avtokatalog.uz">Biz bilan bog‘laning <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="user-profile">
+            <div class="avatar">AK</div>
+            <div class="user-info"><strong>Admin</strong><span>Katalog boshqaruvchisi</span></div>
+            <button class="more-button" type="button" aria-label="Profil menyusi">···</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="catalog">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Boshqaruv paneli</span><span class="breadcrumb-divider">/</span><strong>Avtomobillar</strong></div>
+          <div class="topbar-actions">
+            <span class="connection"><span class="connection-dot"></span> Tizim faol</span>
+            <button class="icon-button" id="refresh-button" type="button" aria-label="Ro‘yxatni yangilash" title="Ro‘yxatni yangilash">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M4.6 9a7.5 7.5 0 0 1 12.6-2.6L20 9M4 17v-5h5m10.4 3a7.5 7.5 0 0 1-12.6 2.6L4 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="icon-button notification-button" type="button" aria-label="Bildirishnomalar">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <section class="page-content">
+          <div class="page-heading">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-line"></span> AVTOPARK BOSHQARUVI</div>
+              <h1>Avtomobillar</h1>
+              <p class="page-description">Katalogingizdagi barcha avtomobillarni bir joydan boshqaring.</p>
+            </div>
+            <div class="heading-date">
+              <span class="date-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="15.5" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 3.5v3M16.5 3.5v3M3.5 9.5h17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span id="current-date">—</span>
+            </div>
+          </div>
+
+          <section class="stats-grid" aria-label="Katalog statistikasi">
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-label">Jami avtomobillar</span><span class="stat-icon blue-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 15.5 6.3 9a2 2 0 0 1 1.9-1.3h7.6A2 2 0 0 1 17.7 9l2.3 6.5V19h-2v-1.5H6V19H4v-3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 15h14M8 12h.01M16 12h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></div>
+              <div class="stat-value" id="total-cars">—</div>
+              <div class="stat-foot"><span class="stat-foot-icon">↗</span> Katalogdagi barcha modellar</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-label">O‘rtacha narx</span><span class="stat-icon green-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18m4-13.5c0-1.4-1.8-2.5-4-2.5s-4 1.1-4 2.5 1.8 2.5 4 2.5 4 1.1 4 2.5-1.8 2.5-4 2.5-4-1.1-4-2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span></div>
+              <div class="stat-value" id="average-price">—</div>
+              <div class="stat-foot"><span class="stat-foot-icon green-foot">↗</span> Katalog bo‘yicha o‘rtacha</div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top"><span class="stat-label">Kategoriyalar</span><span class="stat-icon violet-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h6v6H4zM14 5.5h6v6h-6zM4 15.5h6v4H4zM14 15.5h6v4h-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span></div>
+              <div class="stat-value" id="category-count">—</div>
+              <div class="stat-foot">Faol turdagi avtomobillar</div>
+            </article>
+          </section>
+
+          <section class="catalog-panel" aria-label="Avtomobillar katalogi">
+            <div class="catalog-header">
+              <div class="catalog-title-group">
+                <h2>Katalog ro‘yxati <span class="result-badge" id="result-count">—</span></h2>
+                <p>Barcha avtomobillar va ularning joriy narxlari.</p>
+              </div>
+              <label class="search-box">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                <input id="search-input" type="search" placeholder="Avtomobil qidirish..." autocomplete="off">
+                <kbd>⌘ K</kbd>
+              </label>
+            </div>
+            <div class="filter-row">
+              <div class="category-filters" id="category-filters" aria-label="Kategoriya bo‘yicha filtrlash"></div>
+              <span class="last-updated"><span class="updated-dot"></span> Narxlar yangilangan</span>
+            </div>
+            <div class="car-grid" id="car-grid" aria-live="polite">
+              <div class="loading-state"><span class="loader"></span> Katalog yuklanmoqda...</div>
+            </div>
+          </section>
+          <footer class="page-footer"><span>© 2025 AvtoKatalog</span><span class="footer-divider">•</span><span>Barcha huquqlar himoyalangan.</span><span class="footer-version">Admin panel v1.0</span></footer>
+        </section>
+      </main>
+    </div>
+    <div class="modal-backdrop" id="action-modal" hidden>
+      <section class="action-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <button class="modal-close" id="modal-close" type="button" aria-label="Oynani yopish">×</button>
+        <div class="modal-icon" id="modal-icon" aria-hidden="true"></div>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <form id="price-form" hidden>
+          <label for="price-input">Yangi narx (so‘m)</label>
+          <input id="price-input" name="price" type="number" min="1" step="1" required>
+          <div class="modal-actions">
+            <button class="modal-button secondary" type="button" data-close-modal>Bekor qilish</button>
+            <button class="modal-button primary" type="submit">Narxni saqlash</button>
+          </div>
+        </form>
+        <div class="modal-actions" id="delete-actions" hidden>
+          <button class="modal-button secondary" type="button" data-close-modal>Bekor qilish</button>
+          <button class="modal-button danger" id="confirm-delete" type="button">Ha, o‘chirish</button>
+        </div>
+      </section>
+    </div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
